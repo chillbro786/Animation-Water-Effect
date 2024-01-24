@@ -1,0 +1,386 @@
+/* font-family: 'Caveat', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+/* 
+      Reset section is here  ! */
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color : #577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-section :20px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color:var(--primary-text-color)
+    
+}
+
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+
+p
+{
+    font-family:  'Roboto', sans-serif;
+    font-size:1.25rem ;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    
+}
+ul{
+    list-style: none;
+}
+
+/* 
+creating a utility class for one rem font  */
+.small_bold_class
+{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container
+{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: var(--padding-inline-section);
+}
+
+.flex 
+{
+    display: flex;
+    align-items: center;
+}
+
+.hover_links
+{
+    color: var(--primary-text-color);
+    transition: 0.2s ease-in-out;
+}
+.hover_links:hover
+{
+    color: var(--accent-color);
+    transition: 0.2s ease-in-out;
+}
+
+.primary_button
+{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+   
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+    font-weight: 700;
+}
+
+.primary_button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.secondary_button
+{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    color: var(--primary-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    font-weight: 700;
+}
+.secondary_button:hover{
+    border-color:var(--accent-color);
+    color:var(--accent-color) !important;
+}
+
+/*  styling banner section   */
+.banner_text 
+{
+  color: white;
+  text-align: center;
+  padding: 15px 30px ;
+}
+
+.top_banner
+{
+    background-image: url(./images/blue_background_image.jpg);
+}
+
+
+.company_logo img{
+    width: 150px;
+    height:100px ;
+}
+
+.main_nav
+{
+    justify-content: space-between;
+}
+
+.nav_links ul
+{
+    justify-content: end;
+    gap:40px;
+}
+.nav_links 
+{
+  flex-basis: 730px;
+}
+
+/*  CSS for header section is here! */
+
+header
+{
+    padding: 50px var(--padding-inline-section) 0px;
+}
+
+.header_section
+{
+    justify-content: center;
+    gap: 50px;
+}
+
+.header_right img{
+    width: 500px;
+}
+
+
+.header_left
+{
+    max-width: 40vw;
+}
+
+.header_left h1
+{
+    margin-top: 20px;
+}
+
+.get_start_btn
+{
+    margin-top: 20px;
+}
+
+/* CSS for companies header section */
+.companies-header
+{
+    text-align: center;
+    margin-block: 30px;
+    color: var(--primary-text-color);
+}
+
+.logos
+{
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+
+.logo{
+    height: 66px;
+}
+
+.companies_section
+{
+    margin-bottom: 50px;
+}
+
+/* Features sections  */
+
+ .features-section
+ {
+    padding: 80px var(--padding-inline-section) 0px;
+    background-image: url(./images/features_section_background\ image.jpg);
+ }
+
+ .features-header a 
+ {
+    margin-top: 20px;
+ }
+
+.features-header
+ {
+   text-align: center;
+ }
+
+ .features-card
+ {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    text-align: center;
+   
+ }
+
+ .features-area
+ {
+    flex-wrap: wrap;
+     justify-content: space-between;
+     gap: 40px;
+     margin-top: 40px;
+ }
+
+ .main_logo{
+    font-size: 40px;
+    color: var(--accent-color);
+ }
+
+
+ /* big feature section  */
+
+ .big_features_section
+ {
+    margin: 30px var(--padding-inline-section) 0px;
+
+ }
+
+ .big-feature-container
+ {
+    gap: 100px;
+ }
+
+ .big_feature_ection_image img{
+    width: 500px;
+ }
+
+ .big_feature_section_discription
+ {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+ }
+
+
+ /* Now CSS for example section  */
+
+ .example_section
+ {
+    margin-top: 50px;
+ }
+.Example-header
+{
+    flex-direction: column;
+    gap:20px;
+}
+
+.example_card
+{
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background: black;
+    background:linear-gradient(rgb(0,0,0,0.1) , rgb(0,0,0,0.8)),url(./images/example1.jpg) ;
+    transition: 0.2s ease-in-out;
+}
+.example_card:hover{
+    box-shadow: 0 0 10px #888;
+    transition: 0.2s ease-in-out;
+}
+.card_text
+{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+
+.example_area
+{
+    justify-content: space-between;
+    margin-block: 30px;
+}
+
+
+/* cta section */
+
+.cta-container
+{
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+}
+
+.cta-section
+{
+    background-color: var(--primary-text-color);
+    padding: 120px var(--padding-inline-section) 80px;
+}
+
+.cta-container p
+{
+ color: white;
+}
+
+
+/* CSS for footer section  */
+
+.link_column
+{
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.footer_container
+{
+    justify-content: space-between;
+}
+footer{
+    padding-block: 80px;
+    background-color: #ebf2fa;
+}
+
+.link_column a
+{
+    color: var(--secondary-text-color);
+}
+
+.link_column a:hover
+{
+    color: var(--accent-color);
+}
+
+.subfooter-container
+{
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+.sub_footer
+{
+    background-color: var(--accent-color-dark);
+    padding: var(--padding-inline-section);
+    
+}
+
+.subfooter-container a{
+    color: white;
+}
+
+.subfooter-container i{
+    font-size: 20px;
+}
